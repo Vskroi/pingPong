@@ -1,0 +1,97 @@
+/* Game container */
+#gameContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the game container */
+    width: 80%; /* Optional: Adjust width if needed */
+    height: 80%; /* Optional: Adjust height if needed */
+    display: flex;
+    flex-direction: column; /* Stack items vertically (score, canvas, reset) */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black; /* Dark background */
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.8); /* Neon blue glow around the container */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the game container */
+}
+
+/* Game board (Canvas) */
+#gameBoard {
+    border: 3px solid #00FFFF; /* Neon blue border */
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.7); /* Glowing effect */
+    background-color: black; /* Ensures the board is dark */
+    margin-bottom: 20px; /* Adds space between the canvas and the score text */
+}
+
+/* Score text */
+#scoreText {
+    font-family: "Consolas", monospace;
+    font-size: 100px;
+    color: #00FFFF; /* Neon blue text */
+    text-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.8), 
+        0 0 40px rgba(0, 255, 255, 0.6), 
+        0 0 60px rgba(0, 255, 255, 0.5); /* Soft glowing effect */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Reset button */
+#resetBtn {
+    font-size: 22px;
+    width: 120px;
+    height: 50px;
+    border: 4px solid #00FFFF; /* Neon blue border */
+    border-radius: 15px;
+    background-color: black;
+    color: #00FFFF; /* Neon blue text */
+    cursor: pointer;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF; /* Glowing text */
+    transition: all 0.3s ease-in-out;
+    outline: none; /* Remove default button outline */
+}
+
+/* Hover effect for reset button */
+#resetBtn:hover {
+    box-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF; /* Stronger glow on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Paddle styles */
+paddle {
+    fill: #00FFFF;
+    stroke: #00FFFF;
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.7); /* Glowing neon paddles */
+}
+
+/* Ball */
+#ball {
+    fill: #00FFFF;
+    stroke: #000000;
+    box-shadow: 0 0 15px #00FFFF; /* Ball glow */
+}
+/* button bot and player vs player */
+
+
+#botAndPlayer{
+    font-size: 12px;
+    width: 120px;
+    height: 50px;
+    border: 4px solid #00FFFF; /* Neon blue border */
+    border-radius: 15px;
+    background-color: black;
+    color: #00FFFF; /* Neon blue text */
+    cursor: pointer;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF; /* Glowing text */
+    transition: all 0.3s ease-in-out;
+    outline: none; /* Remove default button outline */
+}
+#hid{
+    visibility: hidden;
+    display: none;
+}
+#botAndPlayer:hover {
+    box-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF; /* Stronger glow on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
